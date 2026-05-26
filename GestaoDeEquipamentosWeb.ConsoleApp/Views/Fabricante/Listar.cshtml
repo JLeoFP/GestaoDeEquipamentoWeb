@@ -4,7 +4,7 @@
 
 
 <h1>
-    Bem-vindo ao sistema de gestão de equipamentos!
+    Gestão de Equipamentos
 </h1>
 
 <hr>
@@ -29,6 +29,7 @@
             <td>Nome</td>
             <td>Email</td>
             <td>Telefone</td>
+            <td>Ações</td>
         </tr>
     </thead>
     <tbody>
@@ -39,6 +40,8 @@
                 <td>@f.Nome</td>
                 <td>@f.Email</td>
                 <td>@f.Telefone</td>
+                <td><a href="/Fabricante/Editar/@f.Id">Editar</a></td>
+                <td><a href="/Fabricante/Excluir/@f.Id">Excluir</a></td>
             </tr>
         }
     </tbody>

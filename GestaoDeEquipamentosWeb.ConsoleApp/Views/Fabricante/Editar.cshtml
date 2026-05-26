@@ -1,3 +1,8 @@
+@using GestaoDeEquipamentosWeb.ConsoleApp.ModuloFabricante
+
+@model Fabricante;
+
+
 <h1>
     Gestão de Equipamentos
 </h1>
@@ -10,26 +15,26 @@
 <hr>
 
 <h2>
-    Cadastro de Fabricantes 
+    Edição de Fabricantes 
 </h2>
 
-<form action="/Fabricante/Cadastrar" method="post">
+<form action="/Fabricante/Editar/@Model.Id" method="post">
     <div
         <label for="Nome"</label>
         <br>
-        <input type="text" name="Nome">
+        <input type="text" name="Nome" value="@Model.Nome">
     </div>
 
     <div
         <label for="Email"</label>
         <br>
-        <input type="email" name="Email">
+        <input type="email" name="Email" value="@Model.Email">
     </div>
 
     <div
         <label for="Telefone"</label>
         <br>
-        <input type="text" name="Telefone">
+        <input type="text" name="Telefone" value="@Model.Telefone">
     </div>
 
     <hr>
